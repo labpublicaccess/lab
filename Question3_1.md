@@ -1,12 +1,6 @@
 # MapReduce Finding Unit-wise Salary
 
 ## Input Data
-Certainly! Here's the Markdown with instructions, mapper code, reducer code, and explanations for the fourth question:
-
-```markdown
-# MapReduce Finding Unit-wise Salary
-
-## Input Data
 
 Create a file named `input4.txt` and paste the following content:
 
