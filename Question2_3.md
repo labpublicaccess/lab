@@ -82,6 +82,4 @@ cat input3.txt | python3 mapper3.py | sort | python3 reducer3.py
 ```
 
 This should output the sorted student details based on their names.
-```
 
-Save this content in a file named `readme.md` in the same directory as your solution files. The explanations provide a clearer understanding of what each component does.
