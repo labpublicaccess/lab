@@ -45,6 +45,10 @@ for line in sys.stdin:
     print(f'{row},{col}\t{matrix},{value}')
 ```
 
+### Mapper Explanation
+
+The Mapper reads input lines, extracts matrix elements along with their positions, and outputs key-value pairs in the format `(row,col)   matrix,value`. This format is essential for grouping values based on their positions during the MapReduce process.
+
 ## Reducer
 
 Create a file named `reducer2_2.py` and paste the following Python code:
@@ -77,6 +81,10 @@ if current_key:
     print(f'{current_key}\t{current_sum}')
 ```
 
+### Reducer Explanation
+
+The Reducer processes the key-value pairs emitted by the Mapper. It accumulates the values based on their positions and matrix, performing matrix addition and subtraction. The output is in the format `(row,col)   result`.
+
 ## Testing
 
 To check if the Mapper and Reducer are working, use the following commands:
@@ -88,5 +96,3 @@ cat input2_2.txt | python3 mapper2_2.py | sort | python3 reducer2_2.py
 
 This should output the result of matrix operations using MapReduce.
 ```
-
-Make sure to save this content in a file named `readme.md` in the same directory as your solution files. You can then use any Markdown viewer or platform to render and display the documentation.
