@@ -63,14 +63,30 @@ for line in sys.stdin:
     year = key
     temperature = int(value)
 
-    total_temperature += temperature
-    count += 1
-    min_temperature = min(min_temperature, temperature)
-    max_temperature = max(max_temperature, temperature)
+    if current_year is None:
+        current_year = year
 
+    if current_year == year:
+        total_temperature += temperature
+        count += 1
+        min_temperature = min(min_temperature, temperature)
+        max_temperature = max(max_temperature, temperature)
+    else:
+        average_temperature = total_temperature / count
+        print(f'{current_year}\t{average_temperature}\t{min_temperature}\t{max_temperature}')
+
+        # Reset variables for the new year
+        current_year = year
+        total_temperature = temperature
+        count = 1
+        min_temperature = temperature
+        max_temperature = temperature
+
+# Print the last year's result
 if current_year:
     average_temperature = total_temperature / count
     print(f'{current_year}\t{average_temperature}\t{min_temperature}\t{max_temperature}')
+
 ```
 
 ### Reducer Explanation
