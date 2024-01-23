@@ -1,6 +1,3 @@
-Certainly! Here's a Markdown file with instructions, mapper code, reducer code, and explanations for the question:
-
-```markdown
 # MapReduce Sorting by Student Name
 
 ## Input Data
