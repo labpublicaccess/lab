@@ -96,3 +96,35 @@ cat input2_2.txt | python3 mapper2_2.py | sort | python3 reducer2_2.py
 
 This should output the result of matrix operations using MapReduce.
 ```
+hdoop@hadoop-client:~$ cat input.txt |python3 mapper2.py
+0,0	a,10
+0,1	a,20
+0,2	a,30
+1,0	a,40
+1,1	a,50
+1,2	a,60
+2,0	a,70
+2,1	a,80
+2,2	a,90
+0,0	b,1
+0,1	b,2
+0,2	b,3
+1,0	b,4
+1,1	b,5
+1,2	b,6
+2,0	b,7
+2,1	b,8
+2,2	b,9
+```
+```
+hdoop@hadoop-client:~$ cat input.txt | python3 mapper2.py | sort | python3 reducer2.py
+0,0	9
+0,1	18
+0,2	27
+1,0	36
+1,1	45
+1,2	54
+2,0	63
+2,1	72
+2,2	81
+```
