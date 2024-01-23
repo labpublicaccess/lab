@@ -87,6 +87,3 @@ This guide will walk you through setting up a simple Hadoop MapReduce job using 
    ```bash
    cat input.txt | python3 mapper.py | sort | python3 reducer.py
    ```
-
-Feel free to adapt the code and commands based on your specific environment and requirements. Happy coding!
-```
