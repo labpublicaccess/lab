@@ -93,6 +93,7 @@ To check if the Mapper and Reducer are working, use the following commands:
 cat input2_2.txt | python3 mapper2_2.py
 cat input2_2.txt | python3 mapper2_2.py | sort | python3 reducer2_2.py
 ```
+## Output
 
 This should output the result of matrix operations using MapReduce.
 ```
