@@ -1,6 +1,3 @@
-Certainly! Here is a Markdown representation of the given solution:
-
-```markdown
 # Matrix Operations using MapReduce
 
 ## Setup
